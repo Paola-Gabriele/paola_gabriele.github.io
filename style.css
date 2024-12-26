@@ -1,0 +1,68 @@
+:root {
+    --background-color: #D62828;
+    --second-background-color: #FFFCF7;
+    --subtitle-background-color: #424af1;
+    --color-title: #FFFCF7;
+    --color-text: #2E382E;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.secao-cards {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cards {
+    background-color: var(--second-background-color);
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin: 20px 50px;
+}
+
+h1 {
+    border-radius: 5px;
+    background-color: var(--background-color);
+    color: var(--color-title);
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+h2 {
+    margin: 0 auto;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: var(--subtitle-background-color);
+    color: var(--color-title);
+}
+
+.code {
+    display: block;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+#colorwheel {
+    display: flex;
+    justify-content: center;
+}
+
+p, li, strong {
+    color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+    .cards {
+        margin: 20px 10px;
+    }
+}
